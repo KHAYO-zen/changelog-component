@@ -1,0 +1,89 @@
+.changelog {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.changelog h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.changelog-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.changelog-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.entry-date {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.entry-marker {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: 120px;
+    margin-left: -114px;
+}
+
+.entry-marker::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% + 15px);
+    background-color: #ddd;
+}
+
+.entry-description {
+    flex: 3;
+    text-align: left;
+    padding-left: 10px;
+    color: #333;
+    font-size: 14px;
+ 
+}
+
+.changelog-entry:last-child .entry-marker::after {
+    display: none;
+}
+
+.changelog-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.changelog-button:hover {
+    background-color: #555;
+}
